@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F6E482;
+    color: #054046;
+}
+
+#header{
+    border-bottom: 6px double #749CA4;
+    text-align: center;
+    padding: 80px;
+    background-image: url("bg1.jpg");
+    background-color: #F6E482;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -100px 0px;
+}
+
+#header h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 15px;
+}
+#header p{
+    margin: auto;
+    width: 300px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.sort{
+    box-shadow: rgba(5, 64, 70, 0.05) 0px 6px 24px 0px, rgba(5, 64, 70, 0.08) 0px 0px 0px 1px;
+    background-color: #F6E482;
+    color: #054046;
+    font-weight: 700;
+}
+.sort:hover, .sort:focus{
+    background-color: #F6E482;
+    color: #054046;
+}
+
+.list{
+    background-color: #F6E482;
+    box-shadow: rgba(5, 64, 70, 0.05) 0px 6px 24px 0px, rgba(5, 64, 70, 0.08) 0px 0px 0px 1px;
+}
+.list li button {
+    color: #054046;
+}
+.list li button:hover{
+    background-color: #054046;
+    color: #F6E482;
+    font-weight: 500;
+}
+
+#content{
+    margin: 50px 50px;
+    box-shadow: rgba(5, 64, 70, 0.05) 0px 6px 24px 0px, rgba(5, 64, 70, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+#content h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+#content ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+ #content ul li{
+    width: 400px;
+    padding: 15px;
+    background-color: #054046;
+    color: #F6E482;
+    border-radius: 15px;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 140px 10px 600px 150px 35px 35px 50px;
+ }
+ #content ul li h3{
+    align-self: center;
+     grid-row: 1/2;
+     text-align: center;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 35px;
+     letter-spacing: 1px;
+ }
+ #content ul li .rating{
+     text-align: center;
+     font-size: 13px;
+     color: red;
+    grid-row: 2/3;
+ }
+ #content ul li .photo{
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+ }
+ #content ul li .description{
+    grid-row: 4/5;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+ }
+ .date{
+    font-size: 13px;
+    
+ }
+ #content ul li button{
+    grid-row: -2/-1;
+    width: 120px;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #054046;
+    color: #F6E482;
+    box-shadow: #F6E482 0px 1px 3px 0px, #F6E482 0px 0px 0px 1px;
+    box-shadow: rgba(246, 228, 130, 0.1) 0px 6px 24px 0px, rgba(246, 228, 130, 0.4) 0px 0px 0px 1px;
+ }
+ #content ul li button:hover{
+    background-color: #F6E482;
+    color:#054046;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #footer{
+    background-color: #749CA4;
+    padding: 30px;
+    color: #F6E482;
+}
+#footer h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#movie-form{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 35px 35px 35px 35px;
+}
+#movie-form label{
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: end;
+    margin: 10px 0px;
+}
+.inp {
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%; 
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #F6E482; 
+    color: #F6E482;  
+}
+
+.inp:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #F6E482; 
+    color:#054046; 
+    background-color: #F6E482;
+}
+
+#btn{
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+    justify-self: center;
+    align-self: center;
+}
+#btnSubmit{
+    cursor: pointer;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    background-color: #749CA4;
+    box-shadow: rgba(246, 228, 130, 0.2) 0px 6px 24px 0px, rgba(246, 228, 130, 0.8) 0px 0px 0px 1px;
+    color: #F6E482; 
+    margin-left: 10px;
+}
+#btnSubmit:hover{
+    background-color: #F6E482;
+    color: #749CA4;
+}
+
+@media screen and (max-width: 1030px) {
+    #header h1{
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    #header p{
+        margin: auto;
+        width: 250px;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    #header h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    #header p{
+        font-size: 15px;
+        margin: auto;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    #movie-form{
+        display: flex;
+        flex-direction: column;
+    }
+    #btnSubmit{
+        margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #content h2{ 
+    font-size: 20px;
+    }
+    #header{
+        padding: 30px;
+      }
+      
+    #header h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #header p{
+        font-size: 10px;
+        margin: auto;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .sort {
+        font-size: 10px;
+    }
+    #movie-form{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    #btnSubmit{
+        margin-top: 15px;
+    }
+
+
+
+    #content ul li{
+        width: 350px;
+        padding: 8px;
+        background-color: #054046;
+        color: #F6E482;
+        border-radius: 5px;
+        margin: 10px;
+        display: grid;
+        grid-template-rows: 70px 5px 280px 100px 15px 15px 25px;
+    }
+    #content ul li h3{
+         font-size: 15px;
+     }
+     #content ul li .rating{
+         font-size: 8px;
+     }
+     #content ul li .description{
+        font-size: 10px;
+        line-height: 1;
+        text-indent: 15px;
+     }
+     .date{
+        font-size: 8px;
+     }
+     #content ul li button{
+        width: 70px;
+        font-size: 10px;
+        padding: 2px;
+        border: none;
+        border-radius: 1px;
+     }
+  
+
+
+
+
+
+
+
+
+
+
+
+  }
